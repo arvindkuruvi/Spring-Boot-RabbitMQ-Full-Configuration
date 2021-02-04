@@ -1,0 +1,23 @@
+version: '3'
+services:
+#    web:
+#      container_name: global_services
+#      build: .
+#      restart: unless-stopped
+#      tty: true
+#      ports: 
+#          - 8887:8887
+#      depends_on:
+#          - automaticassignmentrabbitmq
+ 
+    automaticassignmentrabbitmq:
+      image: rabbitmq:management
+      restart: unless-stopped
+      tty: true
+      ports:
+         - "5600:5672"
+         - "15676:15672"
+     
+          
+         
+    

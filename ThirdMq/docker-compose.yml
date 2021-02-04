@@ -1,0 +1,11 @@
+version: '3'
+services:
+  assignment_service:
+    container_name: assignment_service
+    build: .
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8889:8889" 
+     
+   
